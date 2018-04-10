@@ -1,0 +1,82 @@
+/*Whole Website*/
+
+html{
+  font-size: 16px;
+}
+
+/*Header*/
+
+.header{
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  height: 4rem;
+  z-index: 3;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.logo{
+  display: inline-flex;
+  padding-left: 1.5rem;
+  align-items: center;
+}
+
+.logo img{
+  height: 2rem;
+  display: inline-block;
+}
+
+.header a{
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.logotextone{
+  color: rgba(75,75,75);
+}
+
+.logotexttwo{
+  color: rgba(155,155,155);
+}
+
+.nav-mobile,
+.nav{
+  padding-right: 1.5rem;
+}
+
+.nav-mobile ul,
+.header,
+.nav ul{
+  display: flex;
+}
+.nav-mobile li,
+.nav li{
+  padding-left: 1rem;
+  display: inline;
+}
+
+.nav-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 665px){
+  .logo,
+  .nav{
+    display: none;
+  }
+
+  .nav-mobile{
+    display: block;
+    width: 100%;
+    padding-left: 0rem;
+  }
+
+  .nav-mobile ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding-left: 0rem;
+  }
+}
