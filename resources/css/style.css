@@ -4,6 +4,9 @@ html{
   font-size: 16px;
 }
 
+body{
+  margin: 0rem;
+}
 /*Header*/
 
 .header{
@@ -33,7 +36,7 @@ html{
 }
 
 .logotextone{
-  color: rgba(75,75,75);
+  color: rgba(74,74,74);
 }
 
 .logotexttwo{
@@ -60,7 +63,7 @@ html{
   display: none;
 }
 
-@media only screen and (max-width: 665px){
+@media only screen and (max-width: 845px){
   .logo,
   .nav{
     display: none;
@@ -78,5 +81,71 @@ html{
     align-items: center;
     width: 100%;
     padding-left: 0rem;
+  }
+}
+
+/* Banner */
+
+.banner{
+  background-color: lightgrey;
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 1;
+}
+
+.bannerimage{
+  width: 60%;
+  height: auto;
+  padding: 2rem 1.5rem;
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bannertext{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.bannertext h1{
+  color: rgba(74,74,74);
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+}
+
+.bannertext p{
+  color: rgba(74,74,74);
+  width: 60%;
+}
+
+#button{
+  color: white;
+  font-weight:400;
+  display: block;
+  padding: 0.5rem 4rem;
+  background-color: rgba(74,74,74);
+  text-align: center;
+  margin: 1rem 0rem;
+  width: 30%;
+}
+
+@media only screen and (max-width: 845px) {
+  .banner{
+    display: block;
+  }
+
+  .bannerimage{
+      text-align: center;
+  }
+
+  .bannertext{
+    width: 100%;
   }
 }
