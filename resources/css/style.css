@@ -96,7 +96,7 @@ body{
 }
 
 .bannercontainer{
-  min-width: 65%;
+  min-width: 60%;
   max-width: 90%;
   height: 50rem;
   padding: 2rem 1.5rem;
@@ -203,4 +203,31 @@ body{
   .bannerimage{
     height: 20rem;
   }
+}
+
+/* Information */
+
+.information{
+  display: inline-flex;
+  overflow: hidden;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.information-left{
+  width: 60%;
+}
+
+.image-container{
+  min-width: 60%;
+  max-width: 90%;
+  padding: 2rem 1.5rem;
+  height: 30rem;
+  overflow: hidden;
+}
+
+.image-container img{
+  max-width: 77%;
+  height: auto;
+  display: black;
 }
