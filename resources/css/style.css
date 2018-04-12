@@ -63,7 +63,7 @@ body{
   display: none;
 }
 
-@media only screen and (max-width: 845px){
+@media only screen and (max-width: 1030px){
   .logo,
   .nav{
     display: none;
@@ -95,10 +95,15 @@ body{
   flex-grow: 1;
 }
 
-.bannerimage{
-  width: 60%;
-  height: auto;
+.bannercontainer{
+  min-width: 65%;
+  max-width: 90%;
+  height: 50rem;
   padding: 2rem 1.5rem;
+}
+
+.bannerimage{
+  height: 50rem;
   background-image: url('../images/banner.jpg');
   background-position: center;
   background-size: cover;
@@ -109,7 +114,8 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20%;
+  min-width: 25%;
+  max-width: 30%;
   font-weight: bold;
   margin-left: 1rem;
 }
@@ -117,35 +123,84 @@ body{
 .bannertext h1{
   color: rgba(74,74,74);
   margin-bottom: 0.25rem;
-  font-size: 2.5rem;
+  font-size: 4rem;
+  font-weight: bolder;
 }
 
 .bannertext p{
+  font-size: 2rem;
   color: rgba(74,74,74);
-  width: 60%;
+  min-width: 60%;
+  max-width: 70%;
+  font-weight: bold;
 }
 
 #button{
+  font-size: 1.8rem;
   color: white;
-  font-weight:400;
+  font-weight: lighter;
   display: block;
   padding: 0.5rem 4rem;
   background-color: rgba(74,74,74);
   text-align: center;
   margin: 1rem 0rem;
-  width: 30%;
+  width: 50%;
 }
 
-@media only screen and (max-width: 845px) {
+@media only screen and (max-width: 1030px) {
   .banner{
     display: block;
-  }
-
-  .bannerimage{
-      text-align: center;
+    margin: 0rem auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .bannertext{
-    width: 100%;
+    min-width: 80%;
+    max-width: 35%;
+    margin: 0rem;
+  }
+
+  .bannertext h1{
+    font-size: 2.5rem;
+    min-width: 100%;
+    max-width: 35%;
+    padding: 1rem 1.5rem;
+    margin: 0rem;
+  }
+
+  .bannertext p{
+    font-size: 1.5rem;
+    min-width: 100%;
+    max-width: 40%;
+    padding: 1rem 1.5rem;
+    margin: 0rem;
+  }
+
+  #button{
+    margin: 1rem 1.5rem;
+    font-size: 1.3rem;
+    width: 50%;
+  }
+
+  .bannercontainer{
+    height: 40rem;
+    padding: 0rem;
+    max-width: 100%;
+  }
+
+  .bannerimage{
+    height: 40rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .bannercontainer{
+    height: 20rem;
+  }
+
+  .bannerimage{
+    height: 20rem;
   }
 }
