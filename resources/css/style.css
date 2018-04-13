@@ -391,3 +391,136 @@ body{
   color: rgba(83, 149, 221);
   font-size: 1rem;
 }
+
+/* Learning */
+
+.learning{
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.learning-courses{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 3.5rem;
+}
+
+.learning-image-container{
+  width: 35rem;
+  padding: 1rem 1rem 0rem 1rem;
+}
+
+.learning-image-one{
+  height: 20rem;
+  overflow: hidden;
+  background-image: url('../images/course-software.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning-image-two{
+  height: 20rem;
+  overflow: hidden;
+  background-image: url('../images/course-computer-art.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning-image-three{
+  height: 20rem;
+  overflow: hidden;
+  background-image: url('../images/course-design.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning-image-four{
+  height: 20rem;
+  overflow: hidden;
+  background-image: url('../images/course-data.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning-image-five{
+  height: 20rem;
+  overflow: hidden;
+  background-image: url('../images/course-business.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning-image-six{
+  height: 20rem;
+  overflow: hidden;
+  background-image: url('../images/course-marketing.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.learning-text{
+  background-color: white;
+  padding: 1rem;
+  margin: 0rem 1rem 1rem 1rem;
+}
+
+.learning-text h1{
+  margin: 0rem;
+  padding: 0rem 0rem 0.5rem 1rem;
+  color: rgba(74,74,74);
+}
+
+.learning-text h2{
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  margin: 0rem;
+  color: rgba(74,74,74, 0.6);
+  font-weight: lighter;
+}
+
+.learning-text p{
+  width: 80%;
+  padding: 0rem 0rem 0.5rem 1rem;
+  margin: 0rem;
+  color: rgba(74,74,74, 0.6);
+}
+
+.learning-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .learning{
+    display: none;
+  }
+
+  .learning-mobile{
+    display: block;
+  }
+}
+
+/* Learning Mobile */
+
+.learning-mobile h1{
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2.8rem;
+  color: rgba(74,74,74);
+}
+
+.learning-mobile-box{
+  background-color: lightgrey;
+  padding: 2rem 0rem 2rem 1rem;
+  margin: 1rem 1rem 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(74,74,74, 0.8);
+}
