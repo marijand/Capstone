@@ -2,6 +2,7 @@
 
 html{
   font-size: 16px;
+  font-family: arial;
 }
 
 body{
@@ -93,6 +94,11 @@ body{
   width: 100%;
   overflow: hidden;
   flex-grow: 1;
+}
+
+.banner-left{
+  width: 100%;
+  margin: 0rem;
 }
 
 .bannercontainer{
@@ -216,18 +222,89 @@ body{
 
 .information-left{
   width: 60%;
+  padding-left: 1.5rem;
+  color: rgba(74,74,74);
 }
 
 .image-container{
   min-width: 60%;
-  max-width: 90%;
-  padding: 2rem 1.5rem;
+  max-width: 100%;
+  padding: 2rem 1.5rem 2rem 0rem;
+  padding-right: 1.5rem;
   height: 30rem;
   overflow: hidden;
 }
 
 .image-container img{
-  max-width: 77%;
+  max-width: 100%;
   height: auto;
   display: black;
+}
+
+.information-left h1{
+  font-size: 3rem;
+}
+
+.information-left p{
+  font-size: 1.5rem;
+  padding-bottom: 2rem;
+  color: rgba(74, 74, 74, 0.7)
+}
+
+.information-left h2{
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+.information-right{
+  width: 40%;
+  padding-top: 0.5rem;
+}
+
+.box{
+  display: flex;
+}
+
+.box-left{
+  width: 35%;
+}
+
+.box-right{
+  display: flex;
+  align-items: center;
+  width: 65%;
+  padding-left: 3.5rem;
+}
+
+.boximage{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 1.5rem;
+}
+
+.boximage img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.boxtext{
+  color: rgba(74,74,74);
+}
+
+.boxtext h1{
+  font-size: 2.5rem;
+  margin-bottom: 0rem;
+  font-weight: bold;
+}
+
+.boxtext p{
+  font-size: 1.7rem;
+  font-weight: lighter;
+}
+
+.boxtext span{
+  color: rgba(83, 149, 221);
+  font-size: 1rem;
 }
