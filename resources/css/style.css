@@ -14,7 +14,7 @@ h1{
 }
 /*Header*/
 
-.header{
+header{
   align-items: center;
   justify-content: space-between;
   background-color: white;
@@ -35,7 +35,7 @@ h1{
   display: inline-block;
 }
 
-.header a{
+header a{
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -49,17 +49,17 @@ h1{
 }
 
 .nav-mobile,
-.nav{
+nav{
   padding-right: 1.5rem;
 }
 
 .nav-mobile ul,
-.header,
-.nav ul{
+header,
+nav ul{
   display: flex;
 }
 .nav-mobile li,
-.nav li{
+nav li{
   padding-left: 1rem;
   display: inline;
 }
@@ -70,7 +70,7 @@ h1{
 
 @media only screen and (max-width: 1030px){
   .logo,
-  .nav{
+  nav{
     display: none;
   }
 
